@@ -1,9 +1,9 @@
 #include "parseParams.h"
 
-#include "external\Json\json.h"
-#include "external\ArcSim\util.hpp"
-#include "external\ArcSim\vectors.hpp"
-#include "external\ArcSim\referenceshape.hpp"
+#include "external/Json/json.h"
+#include "external/ArcSim/util.hpp"
+#include "external/ArcSim/vectors.hpp"
+#include "external/ArcSim/referenceshape.hpp"
 
 #include "Cloth.h"
 #include "Constraints.h"
@@ -14,7 +14,7 @@
 #include "Shape.h"
 #include "GeneralizedSolver.h"
 
-#include <Eigen\Core>
+#include <Eigen/Core>
 
 #include <iostream>
 #include <vector>

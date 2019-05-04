@@ -15,14 +15,14 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include "online\Camera.h"
-#include "online\Program.h"
-#include "online\MatrixStack.h"
-#include "online\GLSL.h"
+#include "online/Camera.h"
+#include "online/Program.h"
+#include "online/MatrixStack.h"
+#include "online/GLSL.h"
 
 #endif // EOL_ONLINE
 
-#include <Eigen\Core>
+#include <Eigen/Core>
 
 #include <memory>
 #include <iostream>

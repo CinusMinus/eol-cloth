@@ -5,11 +5,11 @@
 #include <iostream>
 
 #ifdef EOLC_MOSEK
-#include "external\SolverWrappers\Mosek\QuadProgMosek.h"
+#include "external/SolverWrappers/Mosek/QuadProgMosek.h"
 #endif
 
 #ifdef EOLC_GUROBI
-#include "external\SolverWrappers\Gurobi\Gurobi.h"
+#include "external/SolverWrappers/Gurobi/Gurobi.h"
 #endif
 
 using namespace std;
