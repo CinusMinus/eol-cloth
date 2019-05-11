@@ -25,7 +25,7 @@ class MatrixStack;
 class Program;
 #endif
 
-extern struct Material {
+struct Material {
 	double density; // area density
 	double e;
 	double nu;
@@ -34,7 +34,7 @@ extern struct Material {
 	double dampingB;
 };
 
-extern struct Remeshing {
+struct Remeshing {
 	double refine_angle, refine_compression, refine_velocity;
 	double size_min, size_max; // size limits
 	double aspect_min; // aspect ratio control

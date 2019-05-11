@@ -45,13 +45,6 @@ template <typename T> void parse(vector<T> &v, const Json::Value &json) {
 		parse(v[i], json[i]);
 }
 
-template <typename T> void parse(T &x, const Json::Value &json, const T &x0) {
-	if (json.isNull())
-		x = x0;
-	else
-		parse(x, json);
-}
-
 void parse(bool &b, const Json::Value &json) {
 	if (!json.isBool()) complain(json, "boolean");
 	b = json.asBool();
@@ -122,6 +115,13 @@ void parse(VectorXd &v, const Json::Value &json) {
 	for (int i = 0; i < v.size(); i++) {
 		v(i) = json[i].asDouble();
 	}
+}
+
+template <typename T> void parse(T &x, const Json::Value &json, const T &x0) {
+    if (json.isNull())
+        x = x0;
+    else
+        parse(x, json);
 }
 
 void load_genset(const shared_ptr<genSet> genset, const string &JSON_FILE)
