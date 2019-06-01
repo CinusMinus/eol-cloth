@@ -89,7 +89,6 @@
 		// The xs,ys,zs values are the scale along each local axis
 		// The xv,yv,zv values are the velocity along that local axis
 		// The xw,yw,zw values are the angular velocity around that local axis
-		The 
 		"boxes": [
 
 		]
